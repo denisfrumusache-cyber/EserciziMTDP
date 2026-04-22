@@ -18,14 +18,15 @@ public class Esame {
         stampaEsito(studente, voto);
         if (esameSuperato(voto)){
             registraEsito(studente, voto);
+            stampaVotoRegistrato();
         }else{
             stampaEsameNonSuperato();
         }
     }
 
     public void stampaEsito(Studente studente, int voto){
-        System.out.println("Esame superato e registrato nel libretto.");
-        System.out.println("Esame non superato, nessuna registrazione nel libretto");
+        System.out.println("Esame:" + this.getNome());
+        System.out.println("Studente:" + studente.getNomeCompleto());
         System.out.println("Voto assegnato: " + voto);
     }
 
@@ -45,6 +46,10 @@ public class Esame {
     }
     public void stampaEsameNonSuperato(){
         System.out.println("Ci dispiace, non hai superato l'esame");
+    }
+
+    public void stampaVotoRegistrato(){
+        System.out.println("L'esame è stato registrato nel suo Libretto");
 
     }
 }
