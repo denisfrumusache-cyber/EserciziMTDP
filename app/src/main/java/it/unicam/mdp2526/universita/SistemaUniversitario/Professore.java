@@ -32,5 +32,10 @@ public class Professore extends Persona implements Valutatore {
         Random random = new Random();
         return random.nextInt(31);
     }
+    @Override
+    public void presentati(){
+        System.out.print("Ciao, sono " );
+
+    }
 }
 

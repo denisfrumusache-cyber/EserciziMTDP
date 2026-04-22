@@ -21,4 +21,5 @@ public abstract class Persona implements Serializable {
     public String getNomeCompleto(){
         return this.nome + " " + this.cognome;
     }
+    public abstract void presentati();
 }

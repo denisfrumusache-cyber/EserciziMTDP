@@ -12,6 +12,15 @@ public class Esame {
     }
     public void sostieniEsame (Studente studente){
         int voto = valutatore.assegnaVoto(studente);
+        if (voto >= 18 && voto <= 30 || voto == 31){
+            studente.getLibretto().registraEsameSuperato(this,voto);
+            System.out.println("Esame superato e registrato nel libretto.");
+        }else{
+            System.out.println("Esame non superato, nessuna registrazione nel libretto");
+        }
         System.out.println("Voto assegnato: " + voto);
+    }
+    public String getNome(){
+        return this.nome;
     }
 }

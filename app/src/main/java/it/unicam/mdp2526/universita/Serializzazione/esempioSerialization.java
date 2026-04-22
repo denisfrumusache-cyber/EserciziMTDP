@@ -1,7 +1,7 @@
 package it.unicam.mdp2526.universita.Serializzazione;
 
 import java.io.*;
-
+@SuppressWarnings("all")
 public class esempioSerialization {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         //Mi creo un oggetto Animale
