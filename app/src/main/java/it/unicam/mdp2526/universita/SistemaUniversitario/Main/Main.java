@@ -1,4 +1,8 @@
-package it.unicam.mdp2526.universita.SistemaUniversitario;
+package it.unicam.mdp2526.universita.SistemaUniversitario.Main;
+
+import it.unicam.mdp2526.universita.SistemaUniversitario.ClassiPrincipali.Professore;
+import it.unicam.mdp2526.universita.SistemaUniversitario.ClassiPrincipali.Studente;
+import it.unicam.mdp2526.universita.SistemaUniversitario.ClassiAstratte.Persona;
 
 public class Main {
     public static void main(String[] args) {

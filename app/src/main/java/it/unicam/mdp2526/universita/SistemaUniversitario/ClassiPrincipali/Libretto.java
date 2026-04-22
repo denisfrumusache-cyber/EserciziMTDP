@@ -1,13 +1,9 @@
-package it.unicam.mdp2526.universita.SistemaUniversitario;
+package it.unicam.mdp2526.universita.SistemaUniversitario.ClassiPrincipali;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
-import java.util.ArrayList;
-import java.util.List;
-
-    public class Libretto {
+public class Libretto{
 
         private final Studente studente;
         private final List<Esame> esamiSuperati = new ArrayList<>();
@@ -32,9 +28,9 @@ import java.util.List;
             voti.add(voto);
         }
 
-        public double calcolaMedia() {
+        public int calcolaMedia() {
             if (voti.isEmpty()) {
-                return 0.0;
+                return 0;
             }
 
             int somma = 0;
@@ -42,7 +38,7 @@ import java.util.List;
                 somma += (voto == 31) ? 30 : voto;
             }
 
-            return (double) somma / voti.size();
+            return  somma / voti.size();
         }
 
         public boolean puoLaurearsi() {
@@ -57,4 +53,6 @@ import java.util.List;
                 System.out.println(esamiSuperati.get(i).getNome() + " - " + votoString);
             }
         }
+
+
 }

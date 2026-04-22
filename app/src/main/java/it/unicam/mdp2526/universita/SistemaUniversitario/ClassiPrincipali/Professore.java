@@ -1,4 +1,7 @@
-package it.unicam.mdp2526.universita.SistemaUniversitario;
+package it.unicam.mdp2526.universita.SistemaUniversitario.ClassiPrincipali;
+
+import it.unicam.mdp2526.universita.SistemaUniversitario.ClassiAstratte.Persona;
+import it.unicam.mdp2526.universita.SistemaUniversitario.Contratti.Valutatore;
 
 import java.util.Random;
 

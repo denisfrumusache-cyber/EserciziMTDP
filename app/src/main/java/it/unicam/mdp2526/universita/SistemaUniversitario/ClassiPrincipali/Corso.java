@@ -1,4 +1,4 @@
-package it.unicam.mdp2526.universita.SistemaUniversitario;
+package it.unicam.mdp2526.universita.SistemaUniversitario.ClassiPrincipali;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,5 +1,7 @@
-package it.unicam.mdp2526.universita.SistemaUniversitario;
+package it.unicam.mdp2526.universita.SistemaUniversitario.ClassiPrincipali;
 
+
+import it.unicam.mdp2526.universita.SistemaUniversitario.ClassiAstratte.Persona;
 
 @SuppressWarnings("All")
 public class Studente extends Persona {
