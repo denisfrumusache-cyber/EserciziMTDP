@@ -37,7 +37,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass ="it.unicam.mdp2526.universita.SistemaUniversitario.Main"
+    mainClass ="it.unicam.mdp2526.universita.SistemaUniversitario.Main.Main"
 }
 
 tasks.named<Test>("test") {

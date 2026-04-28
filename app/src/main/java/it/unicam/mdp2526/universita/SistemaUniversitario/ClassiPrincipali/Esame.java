@@ -3,6 +3,8 @@ package it.unicam.mdp2526.universita.SistemaUniversitario.ClassiPrincipali;
 
 import it.unicam.mdp2526.universita.SistemaUniversitario.Contratti.Valutatore;
 
+import static it.unicam.mdp2526.universita.Utils.FormattatoreVoto.formatta;
+
 @SuppressWarnings("All")
 public class Esame {
     private String nome;
@@ -27,7 +29,8 @@ public class Esame {
     public void stampaEsito(Studente studente, int voto){
         System.out.println("Esame:" + this.getNome());
         System.out.println("Studente:" + studente.getNomeCompleto());
-        System.out.println("Voto assegnato: " + voto);
+        String esitoVoto = formatta(voto);
+        System.out.println("Voto assegnato: " + esitoVoto);
     }
 
     public boolean esameSuperato(int voto){
@@ -49,7 +52,7 @@ public class Esame {
     }
 
     public void stampaVotoRegistrato(){
-        System.out.println("L'esame è stato registrato nel suo Libretto");
+        System.out.println("L'esame e' stato registrato nel suo Libretto");
 
     }
 }
